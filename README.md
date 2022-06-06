@@ -1,6 +1,6 @@
 # FirstAppF2021g2
 
-This project was part of one of my college projects in web development, generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.11.
+This project was part of one of my college projects in web development, generated with Angular CLI version 12.2.11.
 
 ## Development server
 
