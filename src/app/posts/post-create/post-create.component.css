@@ -1,0 +1,26 @@
+
+mat-form-field,
+textarea{
+  width: 100%;
+  margin-bottom: 10px;
+}
+mat-radio-button, mat-radio-button {
+    margin-left: 16px;
+}
+.example-margin {
+    margin: 0 12px;
+}
+.breakfast {
+    display: inline-block;
+    width: 100%;
+}
+.amenities {
+    display: inline-block;
+    width: 100%;
+    margin: 10px 0;
+}
+button {
+    display: inline-block;
+    margin-top: 10px;
+    width: 100%;
+}

@@ -1,0 +1,35 @@
+<mat-card>
+  <form (submit) = "onAddPost(postForm)" #postForm = "ngForm" >
+    <h1>ROOM RESERVATION</h1>
+    <mat-form-field>
+        <label id="title">Room type</label>
+        <input matInput type = "text" name = "title" [ngModel] = "post?.title" required #title= "ngModel">
+        <mat-error *ngIf= "title.invalid">This field is required</mat-error>
+    </mat-form-field>
+    <mat-form-field>
+        <label id="startDate">From</label>
+        <input matInput type = "date" name = "startDate" 
+        [ngModel] = "post?.startDate" required #startDate="ngModel">
+        <mat-error *ngIf= "startDate.invalid">This field is required</mat-error>
+    </mat-form-field>
+    <mat-form-field>
+        <label id="endDate">To</label>
+        <input matInput type = "date" name = "endDate" 
+        [ngModel] = "post?.endDate" required #endDate="ngModel">
+        <mat-error *ngIf= "endDate.invalid">This field is required</mat-error>
+    </mat-form-field>
+    <mat-radio-group class="breakfast" >
+        <label id="endDate">Breakfast:</label>
+        <input mat-radio-button type="radio" value="Yes" name="breakfast"
+        [ngModel] = "post?.breakfast" required #breakfast="ngModel"> Yes
+        <input mat-radio-button type="radio" value="No" name="breakfast"
+        [ngModel] = "post?.breakfast" required #breakfast="ngModel"> No
+        <mat-error *ngIf= "breakfast.invalid">This field is required</mat-error>
+    </mat-radio-group>
+    <button
+      mat-raised-button
+      color = "primary"
+      type = "submit">Save Post
+    </button>
+  </form>
+</mat-card>
