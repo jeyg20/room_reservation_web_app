@@ -1,4 +1,4 @@
-# FirstAppF2021g2
+# FirstApp
 
 This project was part of one of my college projects in web development, generated with Angular CLI version 12.2.11.
 
